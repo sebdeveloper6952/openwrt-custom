@@ -1,3 +1,6 @@
 FROM openwrtorg/rootfs
 
-COPY . /etc/config
+RUN mkdir /etc/custom && mkdir -p /var/lock
+COPY . /etc/custom
+
+RUN opkg update && opkg install install ntpd
