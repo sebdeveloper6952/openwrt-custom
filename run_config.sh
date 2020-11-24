@@ -1,10 +1,10 @@
+mv /etc/custom/openwrt-system /etc/config/system
 mv /etc/custom/openwrt-network /etc/config/network
+/etc/init.d/network reload
 mv /etc/custom/openwrt-dhcp /etc/config/dhcp
-/etc/init.d/network reload 2>&1 /dev/null
-/etc/init.d/dnsmasq reload 2>&1 /dev/null
+/etc/init.d/dnsmasq reload
 
 # ntp
-uci set system.ntp.enable_server='1'
 /etc/init.d/sysntpd disable
 /etc/init.d/ntpd enable
 /etc/init.d/ntpd start
