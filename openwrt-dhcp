@@ -43,9 +43,5 @@ config dhcp 'segmento_2'
 	option limit '150'
 
 config domain
-	option ip '192.168.2.3'
-	option name 'ntp.estarriolechez.org'
-
-config domain
-	option name 'router.lan'
 	option ip '192.168.1.1'
+	option name 'ntp.estarriolechez.org'
