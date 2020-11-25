@@ -19,4 +19,5 @@ uci commit dhcp
 
 # firewall
 mv /etc/custom/openwrt-firewall /etc/config/firewall
-service firewall restart
+# /etc/init.d/firewall reload
+# /etc/init.d/firewall restart
