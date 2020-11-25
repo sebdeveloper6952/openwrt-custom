@@ -19,4 +19,8 @@ uci commit dhcp
 
 # firewall
 mv /etc/custom/openwrt-firewall /etc/config/firewall
+# uci set firewall.@forwarding[1]=forwarding
+# uci set firewall@.forwarding[1].src='wan'
+# uci set firewall@.forwarding[1].dest='lan'
+# uci commit firewall
 /etc/init.d/firewall reload

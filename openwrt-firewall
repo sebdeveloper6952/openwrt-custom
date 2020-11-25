@@ -25,6 +25,10 @@ config forwarding
 	option src 'lan'
 	option dest 'wan'
 
+config forwarding
+    option src 'wan'
+    option dest 'lan'
+
 config rule
 	option name 'Allow-DHCP-Renew'
 	option src 'wan'
