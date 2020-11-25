@@ -13,3 +13,6 @@ mv /etc/custom/openwrt-firewall /etc/config/firewall
 /etc/init.d/sysntpd disable
 /etc/init.d/ntpd enable
 /etc/init.d/ntpd start
+
+# weird
+/etc/init.d/firewall reload
