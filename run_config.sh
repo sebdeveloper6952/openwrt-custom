@@ -16,3 +16,7 @@ uci add_list dhcp.@dnsmasq[0].server="8.8.4.4"
 uci set dhcp.@dnsmasq[0].noresolv="1"
 uci commit dhcp
 /etc/init.d/dnsmasq restart
+
+# firewall
+mv /etc/custom/openwrt-firewall /etc/config/firewall
+/etc/init.d/firewall reload
