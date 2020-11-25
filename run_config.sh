@@ -7,12 +7,7 @@ mv /etc/custom/openwrt-firewall /etc/config/firewall
 # reload services to take as input the new config files
 /etc/init.d/network reload
 /etc/init.d/dnsmasq reload
-/etc/init.d/firewall reload
-
 # ntp
 /etc/init.d/sysntpd disable
 /etc/init.d/ntpd enable
 /etc/init.d/ntpd start
-
-# weird
-/etc/init.d/firewall reload
